@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+
+	/* Desktop first approach */
+
+	/* Default styles for Desktop */
+
+    div.header {
+    	background: #adadff;
+      	height: 50px;
+    }
+
+    div.container {
+      	height: 200px;
+      	display: flex;
+    }
+
+    div.menu {
+    	background: #ff6b6b;
+      	flex: 0 0 200px;
+    }
+
+    div.content {
+    	background: orange;
+      	flex: auto;
+    }
+
+    div.footer {
+    	background: #7dd96d;
+      	height: 50px;
+    }
+
+	/* Mobile styles for screen width <= 550px */
+
+	@media (max-width: 550px)
+	{
+		/* below styles overwrite desktop styles */
+
+		div.container {
+			background: orange;
+			height: auto;
+			display: block;
+		}
+
+		div.menu {
+			flex: none;
+			height: 50px;
+		}
+
+		div.content {
+			flex: none;
+			height: 300px;
+		}
+	}
+
+  </style>
+</head>
+<body>
+<div class="header">Header ...</div>
+<div class="container">
+    <div class="menu">Menu ...</div>
+    <div class="content">Content ...</div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/2048px-Edit_icon_%28the_Noun_Project_30184%29.svg.png" alt="">
+    <img src="https://i.ytimg.com/vi/jkWbp6I7kzo/mqdefault.jpg" alt="">
+</div>
+<div class="footer">Footer ...</div>
+</body>
+</html>
