@@ -2,7 +2,7 @@ package com.example.demo;
 
 import java.util.Collection;
 import java.util.List;
-
+//Paginacja
 public class PaginatedResult {
     public Integer pageNumber;
     public Integer pagesCount;
